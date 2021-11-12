@@ -1,20 +1,23 @@
 
-//console.log("Onyinye");
+console.log("Onyinye");
 
-// function validateForm() {
-//     var x = document.forms["myForm"].value;
-//     if (x == "fname" || x == null) {
-//       alert("Name must be filled out");
-     
-//     }else (x === "address"){
-//         alert("Address must be filled out"); 
-//     }return false;
-//   }
 
-// function validateForm() {
-//     let x = document.forms["miniContainer2"]["firstName"].value;
-//     if (x == "") {
-//       alert("Name must be filled out");
-//       return false;
+// function processField(field){
+//     field.style.border = "1px solid black";
+//     const fieldValue = field.value;
+//     if (fieldValue.trim().length ===0){
+//         field.style.border= "1px solid red";
+//         return false;
+//     }else {
+//         return fieldValue
 //     }
-//   }
+// }
+
+function processField(){
+    if (document.getElementById("fname").value == " "){
+        alert('please enter your first name')
+    //field.style.border = "1px solid red"
+     return false;
+    }
+}
+
