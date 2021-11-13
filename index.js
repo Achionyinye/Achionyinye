@@ -1,23 +1,16 @@
+const form = document.getElementById("miniContainer2");
+const fname = document.getElementById("fname");
+const lastName = document.getElementById("lastName");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
 
-console.log("Onyinye");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-
-// function processField(field){
-//     field.style.border = "1px solid black";
-//     const fieldValue = field.value;
-//     if (fieldValue.trim().length ===0){
-//         field.style.border= "1px solid red";
-//         return false;
-//     }else {
-//         return fieldValue
-//     }
-// }
-
-function processField(){
-    if (document.getElementById("fname").value == " "){
-        alert('please enter your first name')
-    //field.style.border = "1px solid red"
-     return false;
-    }
-}
-
+  //validate firstname
+  const validateFirstName = validation.validateFirstName(fname.value);
+  if (validateFirstName.status === false) {
+    fname.style.border = "1px solid red";
+    document.getElementById("fnameError").innerHTML = validateFirstName.text;
+  }
+});
