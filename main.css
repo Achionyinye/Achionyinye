@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+header{
+    background: #60649b;
+    height: 50px;
+    width: 100%;
+}
+header ul li{
+    color: #fff
+}
+section .container h3{
+    border-bottom: 2px solid goldenrod;
+}
+section .container{
+    padding-top: 30px;
+}
+section{
+    background: url('IMAGESS/images.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;   
+}
+/* #about{
+    background-image: url("paper.gif");  
+} */
+/* header .container 
+.carousel .carousel-inner .carousel-item img{
+    height: 400px;
+    width: 100%;
+} */
